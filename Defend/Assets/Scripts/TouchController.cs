@@ -54,7 +54,7 @@ public class TouchController : MonoBehaviour {
 
 			if ( Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "Ground")
 			{
-				fingerObject.transform.position = hit.point;
+				fingerObject.transform.position = hit.point - new Vector3 (0f, 2.1f, 0f);
 
 			}
 
@@ -71,7 +71,7 @@ public class TouchController : MonoBehaviour {
 
 
 		//This is the code for touch inputs on the device. Won't work on PC. If testing on PC use the code above, for device the code above also works, but the below code allows for multitouch. 
-		/*
+
 		//for each touch (mutltitouch)
 		for (var j = 0; j < Input.touchCount; ++j)
 		{
@@ -116,6 +116,5 @@ public class TouchController : MonoBehaviour {
 				}
 			}
 		}
-		*/
 	}
 }

@@ -12,7 +12,7 @@ public class Enemy_Tap : MonoBehaviour{
     // Use this for initialization
     void Start()
     {
-        //ObstacleSpawner = GameObject.FindGameObjectWithTag("Spawner");
+        ObstacleSpawner = GameObject.FindGameObjectWithTag("Spawner");
         //When they spawn it will look at the player
         tower = GameObject.FindGameObjectWithTag("Tower");
         Destroy(this.gameObject, 20f);
@@ -27,28 +27,22 @@ public class Enemy_Tap : MonoBehaviour{
         float step = speed * Time.deltaTime;
         transform.position += transform.forward * speed;
     }
-
-
     void OnCollisionEnter(Collision other)
     {
-        
-        //Every time a line created by swiping hits this obstacle, create the explode particle effect and destroy this object
+        //Every time a line created by swiping hits this obstacle, destroy this object
         if (other.gameObject.name == "Line")
         {
-            //removes a count on how many BadCubes are in the scene by subtracting from the value in the spawner objects scripts
-            //ObstacleSpawner.GetComponent<Spawner>().cubes--;
-
             //Destroy self
             Destroy(gameObject);
         }
 
 
-        if (other.gameObject.tag == "Tower")        {
-
+        if (other.gameObject.tag == "Tower")
+        {
             other.gameObject.GetComponent<TowerScript>().TakeDamage(damage);
             Destroy(this.gameObject);
         }
-        
+
 
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class TowerScript : MonoBehaviour {
     public int health;
     public GameObject canvasObject;
+    public GameObject timerObject;
 
     public void TakeDamage(int damageToTake)
     {
@@ -23,6 +24,7 @@ public class TowerScript : MonoBehaviour {
         if (health <= 0)
         {
             canvasObject.SetActive(true);
+            timerObject.SetActive(false);
         }
     }
 }

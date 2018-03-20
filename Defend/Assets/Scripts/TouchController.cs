@@ -21,7 +21,7 @@ public class TouchController : MonoBehaviour {
 		fingerObject.AddComponent<TrailRenderer> ();
 		fingerObject.GetComponent<TrailRenderer>().material = new Material(Shader.Find("Standard"));
 		fingerObject.GetComponent<TrailRenderer> ().material.SetColor ("_Color", Color.red);
-		fingerObject.GetComponent<TrailRenderer> ().startWidth = 1.0f;
+		fingerObject.GetComponent<TrailRenderer> ().startWidth = 0.3f;
 		fingerObject.GetComponent<TrailRenderer> ().endWidth = 0.0f;
 		fingerObject.GetComponent<TrailRenderer> ().time = 0.25f;
 		fingerObject.GetComponent<TrailRenderer> ().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;

@@ -1,16 +1,18 @@
 fileFormatVersion: 2
-guid: b8fd5e3d3e8d3a14ba2953bf2d1d53c0
-timeCreated: 1521185855
+guid: 7aa51b81e6b1f52458b42d7ed12dbf2a
+timeCreated: 1521510261
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: enemy_Swipe
+    100002: //RootNode
+    400000: enemy_Swipe
+    400002: //RootNode
     2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCone2
+    2300000: enemy_Swipe
+    3300000: enemy_Swipe
+    4300000: enemy_Swipe
     9500000: //RootNode
   externalObjects: {}
   materials:

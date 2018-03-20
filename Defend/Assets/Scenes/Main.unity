@@ -936,6 +936,7 @@ GameObject:
   - component: {fileID: 77737870}
   - component: {fileID: 77737872}
   - component: {fileID: 77737871}
+  - component: {fileID: 77737873}
   m_Layer: 5
   m_Name: Totaltime_Time_Text
   m_TagString: Untagged
@@ -953,12 +954,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1275854730}
-  m_RootOrder: 3
+  m_Father: {fileID: 1542957913}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 29.194122}
+  m_AnchoredPosition: {x: 0, y: -30}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &77737871
@@ -993,13 +994,27 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000
+  m_Text: 00:00
 --- !u!222 &77737872
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 77737869}
+--- !u!114 &77737873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 77737869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16da0d3aaef1214899b26eb3cbf8c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counterText: {fileID: 77737871}
+  seconds: 0
+  minutes: 0
 --- !u!1 &275606813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,38 +1267,14 @@ Prefab:
       propertyPath: canvasObject
       value: 
       objectReference: {fileID: 1275854726}
+    - target: {fileID: 114517965870120156, guid: 820b4242b7c9899468d9505c6310260d,
+        type: 2}
+      propertyPath: timerObject
+      value: 
+      objectReference: {fileID: 648640064}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 820b4242b7c9899468d9505c6310260d, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &555124973
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 555124974}
-  m_Layer: 0
-  m_Name: Spawners
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &555124974
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 555124973}
-  m_LocalRotation: {x: -0, y: 0.70710635, z: -0, w: -0.70710725}
-  m_LocalPosition: {x: 16.5, y: -0.42, z: -0.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2017163356}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &648640064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1285,7 @@ GameObject:
   - component: {fileID: 648640065}
   - component: {fileID: 648640067}
   - component: {fileID: 648640066}
+  - component: {fileID: 648640068}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -1351,19 +1343,33 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000
+  m_Text: 00:00
 --- !u!222 &648640067
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 648640064}
+--- !u!114 &648640068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 648640064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16da0d3aaef1214899b26eb3cbf8c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counterText: {fileID: 648640066}
+  seconds: 0
+  minutes: 0
 --- !u!43 &672614263
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-452266
+  m_Name: pb_Mesh11152
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -1558,7 +1564,7 @@ RectTransform:
   m_Children:
   - {fileID: 992156218}
   m_Father: {fileID: 1275854730}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1603,7 +1609,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 924062842}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1350887136}
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &924062842
@@ -1740,12 +1757,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1275854730}
-  m_RootOrder: 4
+  m_Father: {fileID: 1209244180}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -102.69713}
+  m_AnchoredPosition: {x: 0, y: -30}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1076859448
@@ -1780,7 +1797,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000
+  m_Text: 00:00
 --- !u!222 &1076859449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1813,7 +1830,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1076859447}
   m_Father: {fileID: 1275854730}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1949,8 +1967,6 @@ RectTransform:
   - {fileID: 1744124979}
   - {fileID: 1542957913}
   - {fileID: 1209244180}
-  - {fileID: 77737870}
-  - {fileID: 1076859447}
   - {fileID: 924062840}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -2781,6 +2797,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1350887135}
+  - component: {fileID: 1350887136}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -2801,6 +2818,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1350887136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350887134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d7a57cd1d738b4db99f05a99aab8af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1527553536
 Mesh:
   m_ObjectHideFlags: 0
@@ -2957,7 +2985,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 77737870}
   m_Father: {fileID: 1275854730}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3195,12 +3224,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2017163355}
-  m_LocalRotation: {x: 0, y: -0.70710605, z: -0, w: -0.70710754}
-  m_LocalPosition: {x: 0.8, y: 0, z: 16.9}
+  m_LocalRotation: {x: -0, y: -0.00000041723246, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3999977, y: -0.42, z: 0.10002023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 555124974}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -630, z: 0}
 --- !u!114 &2017163357
 MonoBehaviour:
@@ -3214,7 +3243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1221297767802086, guid: 8794e5675ecaf7241afa4898fe91c657, type: 2}
+  - {fileID: 1177696869569596, guid: 8794e5675ecaf7241afa4898fe91c657, type: 2}
   - {fileID: 1084859299293570, guid: 41c545faaeac3d74f9c6f73804338f7d, type: 2}
   spawnValues: {x: 15, y: 0, z: 15}
   spawnWait: 0

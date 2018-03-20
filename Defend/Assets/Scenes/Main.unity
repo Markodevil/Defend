@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000004, guid: 0641ba4757ac6ed46977b8e2587cec45,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -3246,7 +3247,7 @@ MonoBehaviour:
   - {fileID: 1177696869569596, guid: 8794e5675ecaf7241afa4898fe91c657, type: 2}
   - {fileID: 1084859299293570, guid: 41c545faaeac3d74f9c6f73804338f7d, type: 2}
   spawnValues: {x: 15, y: 0, z: 15}
-  spawnWait: 0
+  spawnWait: 3
   spawnMostWait: 3
   spawnLeastWait: 0.5
   startWait: 0

@@ -25,6 +25,15 @@ public class TowerScript : MonoBehaviour {
         {
             canvasObject.SetActive(true);
             timerObject.SetActive(false);
+
+        }
+        if (health <= 0)
+        if (Time.timeScale == 1)
+                    Time.timeScale = 0;
+        {
+            if (health >= 1)
+                if (Time.timeScale == 0)
+                    Time.timeScale = 1;
         }
     }
 }

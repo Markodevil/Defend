@@ -1014,8 +1014,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterText: {fileID: 77737871}
-  seconds: 0
-  minutes: 0
 --- !u!1 &275606813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,6 +1271,11 @@ Prefab:
       propertyPath: timerObject
       value: 
       objectReference: {fileID: 648640064}
+    - target: {fileID: 114517965870120156, guid: 820b4242b7c9899468d9505c6310260d,
+        type: 2}
+      propertyPath: highscoreText
+      value: 
+      objectReference: {fileID: 1076859448}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 820b4242b7c9899468d9505c6310260d, type: 2}
   m_IsPrefabParent: 0
@@ -1363,8 +1366,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterText: {fileID: 648640066}
-  seconds: 0
-  minutes: 0
 --- !u!43 &672614263
 Mesh:
   m_ObjectHideFlags: 0

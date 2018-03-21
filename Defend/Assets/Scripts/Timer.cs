@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Timer : MonoBehaviour
 {
 
     public Text counterText;
 
-    public float seconds, minutes;
+    //public float seconds, minutes;
 
     // Use this for initialization
     void Start()
@@ -21,8 +22,10 @@ public class Timer : MonoBehaviour
     void Update()
     {
         //counts up seconds and minutes
-        minutes = (int)(Time.timeSinceLevelLoad / 60f);
-        seconds = (int)(Time.timeSinceLevelLoad % 60f);
-        counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+        //minutes = (int)(Time.timeSinceLevelLoad / 60f);
+        //seconds = (int)(Time.timeSinceLevelLoad % 60f);
+        //counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+        counterText.text = Math.Round(Time.timeSinceLevelLoad, 3).ToString();
+        
     }
 }

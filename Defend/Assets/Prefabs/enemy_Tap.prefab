@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 33514503692387786}
   - component: {fileID: 135652095424679068}
   - component: {fileID: 23238842226753184}
-  - component: {fileID: 114671340588463932}
   - component: {fileID: 54451809381938694}
+  - component: {fileID: 114664663274198376}
   m_Layer: 0
   m_Name: enemy_Tap
   m_TagString: Enemy
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1084859299293570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.746714, y: 7.0293856, z: -16.543915}
+  m_LocalPosition: {x: 232.07721, y: 435.4526, z: -585.34656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,7 +100,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &114671340588463932
+--- !u!114 &114664663274198376
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1084859299293570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61c0c7e809f33f847bd7beb02b060ab7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ddd40b81e60f434d876c323ad021e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1

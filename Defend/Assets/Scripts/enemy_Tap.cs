@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy_Tap : MonoBehaviour{
+public class Enemy_Tap : MonoBehaviour
+{
 
     public int damage;
     public float speed;

@@ -48,7 +48,7 @@ public class TouchController : MonoBehaviour {
 	void Update () {
 
         // what is the mouse doing
-        Debug.Log("Tap: " + tappingNow + "   SWIPE: " + swipingNow);
+        //Debug.Log("Tap: " + tappingNow + "   SWIPE: " + swipingNow);
 
 		//You can simulate touch with the mouse by using the commented out code here. Use this for PC testing. Works on device as well
 		//OnMouseDown

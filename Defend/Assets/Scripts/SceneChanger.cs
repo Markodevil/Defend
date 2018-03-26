@@ -5,10 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour {
 
-	// Use this for initialization
+
 	public void LoadScene()
     {
         SceneManager.LoadScene("Main");
 	}
-	
+    public void BackBtn(string menuLevel)
+    {
+        //when the Start button is hit - Start Game
+        SceneManager.LoadScene(menuLevel);
+
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 }
+

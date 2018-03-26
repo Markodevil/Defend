@@ -9,6 +9,7 @@ public class enemy_Tap : MonoBehaviour
     private Transform target;
     private GameObject tower;
     private GameObject ObstacleSpawner;
+    private TouchController touchController;
 
     // Use this for initialization
     void Start()
@@ -18,6 +19,7 @@ public class enemy_Tap : MonoBehaviour
         tower = GameObject.FindGameObjectWithTag("Tower");
         Destroy(this.gameObject, 20f);
         transform.LookAt(tower.transform);
+        touchController = GameObject.FindGameObjectWithTag("TouchController").GetComponent<TouchController>();
     }
 
 
@@ -31,7 +33,7 @@ public class enemy_Tap : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         //Every time a line created by swiping hits this obstacle, destroy this object
-        if (other.gameObject.name == "Line")
+        if (other.gameObject.name == "Line" && touchController.tappingNow == true)
         {
             //Destroy self
             Destroy(gameObject);

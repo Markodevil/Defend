@@ -9,6 +9,8 @@ public class Enemy_Swipe : MonoBehaviour {
     private Transform target;
     private GameObject tower;
     private GameObject ObstacleSpawner;
+    private TouchController touchController;
+
     // Use this for initialization
     void Start()
     {
@@ -17,6 +19,7 @@ public class Enemy_Swipe : MonoBehaviour {
         tower = GameObject.FindGameObjectWithTag("Tower");
         Destroy(this.gameObject, 20f);
         transform.LookAt(tower.transform);
+        touchController = GameObject.FindGameObjectWithTag("TouchController").GetComponent<TouchController>();
     }
 
 
@@ -30,7 +33,7 @@ public class Enemy_Swipe : MonoBehaviour {
     void OnCollisionEnter(Collision other)
     {
         //Every time a line created by swiping hits this obstacle, destroy this object
-        if (other.gameObject.name == "Line")
+        if (other.gameObject.name == "Line" && touchController.swipingNow == true)
         {
             //Destroy self
             Destroy(gameObject);

@@ -23,6 +23,7 @@ public class TowerScript : MonoBehaviour
     {
         // Load Player Prefs
         highscore = PlayerPrefs.GetFloat("Highscore", 0);
+        highscoreText.text = highscore.ToString();
     }
 
     // Update is called once per frame

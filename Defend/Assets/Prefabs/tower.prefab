@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1218594563336682}
+  m_RootGameObject: {fileID: 1010977114046596}
   m_IsPrefabParent: 1
---- !u!1 &1218594563336682
+--- !u!1 &1010977114046596
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4672658258923244}
-  - component: {fileID: 33745388247419976}
-  - component: {fileID: 23149666034380316}
-  - component: {fileID: 95608628599266352}
-  - component: {fileID: 65441090991660952}
-  - component: {fileID: 114517965870120156}
+  - component: {fileID: 4219399480539226}
+  - component: {fileID: 33421031147412922}
+  - component: {fileID: 23654497669332988}
+  - component: {fileID: 95161917273129832}
+  - component: {fileID: 114466696915009468}
+  - component: {fileID: 65533589142342346}
   m_Layer: 0
   m_Name: tower
-  m_TagString: Tower
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4672658258923244
+--- !u!4 &4219399480539226
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218594563336682}
+  m_GameObject: {fileID: 1010977114046596}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1500884, y: 0.7172313, z: 0.097}
+  m_LocalPosition: {x: 0.1500884, y: -0.37, z: 0.097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23149666034380316
+--- !u!23 &23654497669332988
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218594563336682}
+  m_GameObject: {fileID: 1010977114046596}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -78,34 +78,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33745388247419976
+--- !u!33 &33421031147412922
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218594563336682}
-  m_Mesh: {fileID: 4300000, guid: b98ca6bdd48d56e4ea93fa2a0f023048, type: 3}
---- !u!65 &65441090991660952
+  m_GameObject: {fileID: 1010977114046596}
+  m_Mesh: {fileID: 4300000, guid: 36e12e5badeb0c14085571a63c57329b, type: 3}
+--- !u!65 &65533589142342346
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218594563336682}
+  m_GameObject: {fileID: 1010977114046596}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4344625, y: 2.1046185, z: 1.4344625}
-  m_Center: {x: 0, y: 0.33507794, z: 0}
---- !u!95 &95608628599266352
+  m_Size: {x: 0.4941739, y: 1.538811, z: 0.540637}
+  m_Center: {x: -0.009330705, y: 0, z: 0.0057562143}
+--- !u!95 &95161917273129832
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218594563336682}
+  m_GameObject: {fileID: 1010977114046596}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b98ca6bdd48d56e4ea93fa2a0f023048, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 36e12e5badeb0c14085571a63c57329b, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -114,12 +114,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114517965870120156
+--- !u!114 &114466696915009468
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218594563336682}
+  m_GameObject: {fileID: 1010977114046596}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3700d8d9c0c759d44920f8c485066198, type: 3}
@@ -127,3 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   canvasObject: {fileID: 0}
+  timerObject: {fileID: 0}
+  highscore: 0
+  playingtime: 0
+  highscoreText: {fileID: 0}

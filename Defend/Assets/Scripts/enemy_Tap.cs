@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Enemy_Tap : MonoBehaviour
 {
-
     public int damage;
     public float speed;
     private Transform target;
     private GameObject tower;
     private GameObject ObstacleSpawner;
+
     // Use this for initialization
     void Start()
     {

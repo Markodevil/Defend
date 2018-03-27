@@ -7,8 +7,13 @@ public class Spawner : MonoBehaviour {
     public GameObject[] enemies;
     public Vector3 spawnValues;
     public float spawnWait;
-    public float spawnMostWait;
-    public float spawnLeastWait;
+
+    public float spawnTimeMin;
+    public float spawnTimeMax;
+    public float spawnTimeMin_Smallest;
+    public float spawnTimeMax_Smallest;
+    public float spawnTimeReducerAmount = 0.1f;
+
     public int startWait;
     public bool stop;
 
@@ -17,18 +22,31 @@ public class Spawner : MonoBehaviour {
 
     int randEnemy;
     
-    // Use this for initialization
+    
 	void Start ()
     {
-		StartCoroutine(waitSpawner());
-	}
+        StartCoroutine(waitSpawner());
+        InvokeRepeating("ReduceSpawnTime", 5f, 2f);
+    }
 	
-	// Update is called once per frame
+	
 	void Update ()
     {
-        spawnWait = Random.Range(spawnLeastWait, spawnMostWait);
+        spawnWait = Random.Range(spawnTimeMin, spawnTimeMax);
 	}
 
+    
+    void ReduceSpawnTime()
+    {
+        spawnTimeMin = Mathf.Max(spawnTimeMin - spawnTimeReducerAmount, spawnTimeMin_Smallest);
+        spawnTimeMax = Mathf.Max(spawnTimeMax - spawnTimeReducerAmount, spawnTimeMax_Smallest);
+    }
+
+
+    
+
+
+    
     IEnumerator waitSpawner()
     {
         yield return new WaitForSeconds (startWait);
@@ -58,4 +76,8 @@ public class Spawner : MonoBehaviour {
             yield return new WaitForSeconds(spawnWait);
         }
     }
+    
+
+
 }
+

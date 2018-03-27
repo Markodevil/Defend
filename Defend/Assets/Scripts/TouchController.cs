@@ -27,8 +27,8 @@ public class TouchController : MonoBehaviour {
 		//Initialise the trailRenderer particles
 		fingerObject = new GameObject("Line");
 		fingerObject.AddComponent<TrailRenderer> ();
-		fingerObject.GetComponent<TrailRenderer>().material = new Material(Shader.Find("Standard"));
-		fingerObject.GetComponent<TrailRenderer> ().material.SetColor ("_Color", Color.red);
+        fingerObject.GetComponent<TrailRenderer>().material = new Material(Shader.Find("Standard"));
+        fingerObject.GetComponent<TrailRenderer> ().material.SetColor ("_Color", Color.red);
 		fingerObject.GetComponent<TrailRenderer> ().startWidth = 0.5f;
 		fingerObject.GetComponent<TrailRenderer> ().endWidth = 0.3f;
 		fingerObject.GetComponent<TrailRenderer> ().time = 0.2f;
